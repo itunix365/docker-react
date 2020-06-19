@@ -1,4 +1,5 @@
-FROM node:alpine as builder
+###FROM node:alpine as builder  ###AWS bug pertaining to builder
+FROM node:alpine
 WORKDIR '/app'
 COPY package*.json ./
 RUN npm install
